@@ -15,7 +15,4 @@ class Item:
     
     def condition_description(self):
         descriptions = ["as-is", "scratched", "used", "slightly used", "like new", "brand new"]
-
-        for i in range(len(descriptions)):
-            if self.condition == i:
-                return descriptions[i]
+        return descriptions[self.condition]
