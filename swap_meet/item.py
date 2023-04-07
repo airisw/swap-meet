@@ -14,5 +14,5 @@ class Item:
         return f"An object of type {self.get_category()} with id {self.id}."
     
     def condition_description(self):
-        descriptions = ["as-is", "scratched", "used", "slightly used", "like new", "brand new"]
-        return descriptions[self.condition]
+        DESCRIPTIONS = ["as-is", "scratched", "used", "slightly used", "like new", "brand new"]
+        return DESCRIPTIONS[self.condition]
