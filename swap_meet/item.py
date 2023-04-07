@@ -11,7 +11,7 @@ class Item:
         return "Item"
     
     def __str__(self):
-        return f"An object of type Item with id {self.id}."
+        return f"An object of type {self.get_category()} with id {self.id}."
     
     def condition_description(self):
         descriptions = ["as-is", "scratched", "used", "slightly used", "like new", "brand new"]
